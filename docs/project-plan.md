@@ -57,7 +57,7 @@ this table.
 | PM | @rupeshsherpa |
 | Developer | @rupeshsherpa |
 | Documentation | @Bipinnep12 |
-| Reviewer | @giripujan-pro |
+| Reviewer | @gireepuzan-pro |
 
 ## 5. Schedule
 
