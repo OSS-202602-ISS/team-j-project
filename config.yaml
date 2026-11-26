@@ -1,3 +1,3 @@
 # Settings your tool reads at start-up. Change these values instead of editing code.
-title: "Server Check Results"      # heading printed above the result table
+title: "Student Assignment Deadline Tracker"      # heading printed above the result table
 min_score: 70                      # records scoring below this are dropped
