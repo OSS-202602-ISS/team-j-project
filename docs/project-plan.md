@@ -16,10 +16,10 @@ this file:
 
 ## 1. The tool
 
-- **Name**: \<project name\>
-- **One sentence**: \<what it does, for whom\>
-- **Category**: design / development / management / operations automation / data processing / security
-- **Track**: A only / A + B (keep one)
+- **Name**: Student Assignment Deadline Tracker
+- **One sentence**: A tool that reads student assignment records and displays upcoming and overdue assignments to help university students manage their deadlines.
+- **Category**: management
+- **Track**: A only
   - A = required for every team: a small tool built with whitelist libraries (fill the two blanks)
   - B = challenge, optional: Track A plus one extension of your own tool
 
@@ -27,9 +27,9 @@ this file:
 
 | | Our project |
 |---|---|
-| **Input** | \<file, values, or API response - be specific\> |
-| **Processing step** | \<the one decision or calculation the tool makes\> |
-| **Output** | \<terminal table / Excel file / log file - what the user sees\> |
+| **Input** | A CSV file containing subjects, assignments, deadlines and completion status. |
+| **Processing step** | Filter incomplete assignments that are overdue or due within seven days. |
+| **Output** | A formatted terminal table showing assignments that need attention. |
 
 **Definition of done**: one run command, one input, one output result.
 Anything beyond that is track B, not the baseline.
@@ -38,7 +38,9 @@ Anything beyond that is track B, not the baseline.
 
 | Library | Why we need it | On the whitelist? |
 |---|---|---|
-| \<library\> | \<reason\> | yes / ask instructor |
+| pandas | Read and filter assignment data from a CSV file. | yes |
+| rich | Display assignment results in a formatted terminal table. | yes |
+| python-dateutil | Parse assignment deadlines and compare dates. | yes |
 
 One row for each library. For example: `| pandas | reads servers.csv | yes |`
 
@@ -52,10 +54,10 @@ this table.
 
 | Role | Who |
 |---|---|
-| PM | |
-| Developer | |
-| Documentation | |
-| Reviewer | |
+| PM | @rupeshsherpa |
+| Developer | @rupeshsherpa |
+| Documentation | @Bipinnep12 |
+| Reviewer | @giripujan-pro |
 
 ## 5. Schedule
 
@@ -70,4 +72,4 @@ this table.
 
 | What could go wrong | What we will do about it |
 |---|---|
-| \<e.g. our input file has empty cells or extra columns\> | \<e.g. shrink to one column and validate it\> |
+| Our input file has missing or invalid assignment deadlines. | Validate the required columns and deadline values before processing. |
